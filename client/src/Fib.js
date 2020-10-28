@@ -6,7 +6,7 @@ class Fib extends Component {
     seenIndexes: [],
     values: {},
     index: ''
-  };
+  }
 
   componentDidMount() {
     this.fetchValues();
@@ -65,7 +65,7 @@ class Fib extends Component {
         </form>
 
         <h3>Indexes I have seen:</h3>
-        {this.renderSeenIndexes()}
+        {this.state.seenIndexes && this.renderSeenIndexes()}
 
         <h3>Calculated Values:</h3>
         {this.renderValues()}
